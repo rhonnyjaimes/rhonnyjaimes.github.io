@@ -80,8 +80,30 @@
     }
 
     .btn-lang {
-      min-width: 44px;
+      background: #eff6ff;
+      color: var(--navy);
+      border: 1.5px solid #3b82f6;
+      border-radius: 999px;
+      padding: 6px 12px;
       font-weight: 700;
+      gap: 5px;
+      box-shadow: 0 2px 10px rgba(37, 99, 235, 0.16);
+    }
+
+    .btn-lang:hover {
+      background: #dbeafe;
+    }
+
+    .cv-lang-opt {
+      opacity: 0.55;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    .cv-lang-opt.active {
+      opacity: 1;
+      background: var(--navy);
+      color: #ffffff;
     }
 
     .btn-print {
@@ -594,7 +616,12 @@
       <a href="index.html" class="btn btn-back" data-i18n="toolbar.back">← Back to Portfolio</a>
     </div>
     <div class="toolbar-right">
-      <button id="cvLangToggle" class="btn btn-lang" title="Cambiar a Español">ES</button>
+      <button id="cvLangToggle" class="btn btn-lang" title="Cambiar idioma / Switch language">
+        <span>🌐</span>
+        <span class="cv-lang-opt active" data-lang="en">EN</span>
+        <span style="opacity: 0.4;">/</span>
+        <span class="cv-lang-opt" data-lang="es">ES</span>
+      </button>
     </div>
   </div>
 
@@ -935,7 +962,9 @@
       });
 
       if (cvLangBtn) {
-        cvLangBtn.textContent = lang === 'en' ? 'ES' : 'EN';
+        cvLangBtn.querySelectorAll('.cv-lang-opt').forEach((opt) => {
+          opt.classList.toggle('active', opt.dataset.lang === lang);
+        });
         cvLangBtn.title = lang === 'en' ? 'Cambiar a Español' : 'Switch to English';
       }
     }

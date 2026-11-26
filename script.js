@@ -235,7 +235,9 @@ function applyLanguage(lang) {
   });
 
   if (langToggle) {
-    langToggle.textContent = lang === 'en' ? 'ES' : 'EN';
+    langToggle.querySelectorAll('.lang-opt').forEach((opt) => {
+      opt.classList.toggle('active', opt.dataset.lang === lang);
+    });
     langToggle.title = lang === 'en' ? 'Cambiar a Español' : 'Switch to English';
   }
 }

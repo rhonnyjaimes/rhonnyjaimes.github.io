@@ -188,22 +188,49 @@ body {
 
 .lang-btn {
   height: 38px;
-  padding: 0 12px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: var(--surface);
+  padding: 0 11px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(56, 189, 248, 0.55);
+  background: var(--accent-soft);
   color: var(--text);
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   cursor: pointer;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.16);
   transition: all 0.2s ease;
 }
 
 .lang-btn:hover {
   border-color: var(--cyan);
-  color: var(--cyan);
+  background: rgba(56, 189, 248, 0.22);
+  transform: translateY(-1px);
+}
+
+.lang-globe {
+  font-size: 0.88rem;
+  line-height: 1;
+}
+
+.lang-sep {
+  opacity: 0.45;
+}
+
+.lang-opt {
+  opacity: 0.55;
+  padding: 2px 5px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.lang-opt.active {
+  opacity: 1;
+  background: linear-gradient(135deg, var(--primary), var(--cyan));
+  color: #ffffff;
 }
 
 .icon-btn svg {
@@ -947,8 +974,13 @@ body {
 
   .lang-btn {
     height: 34px;
-    padding: 0 9px;
-    font-size: 0.74rem;
+    padding: 0 8px;
+    font-size: 0.72rem;
+    gap: 3px;
+  }
+
+  .lang-globe {
+    display: none;
   }
 
   .icon-btn {
