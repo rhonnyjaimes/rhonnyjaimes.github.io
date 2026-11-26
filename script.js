@@ -70,6 +70,8 @@ const translations = {
       'Completed undergraduate thesis focused on developing practical software technology solutions.',
     'exp.eduB3':
       'Complementary foundation in technical support, structured cabling, and computer networks.',
+    'exp.eduB4':
+      '<strong>Languages:</strong> Spanish (Native) · English (A2–B1 · Technical reading &amp; comprehension).',
     'proj.eyebrow': 'GitHub Portfolio',
     'proj.title': 'Featured Projects',
     'proj.sub': 'A selection of real applications built and published on my GitHub account.',
@@ -175,6 +177,8 @@ const translations = {
       'Culminación del Trabajo Especial de Grado orientado al desarrollo de soluciones tecnológicas de software.',
     'exp.eduB3':
       'Base complementaria en soporte técnico, cableado estructurado y redes.',
+    'exp.eduB4':
+      '<strong>Idiomas:</strong> Español (Nativo) · Inglés (A2–B1 · Lectura técnica y comprensión).',
     'proj.eyebrow': 'Portafolio en GitHub',
     'proj.title': 'Proyectos Destacados',
     'proj.sub': 'Selección de aplicaciones reales desarrolladas y publicadas en mi repositorio de GitHub.',
