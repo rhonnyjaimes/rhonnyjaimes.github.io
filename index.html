@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Rhonny Andrés Jaimes González — Computer Engineer &amp; Full Stack Software Developer specializing in React, Node.js, relational databases, and AI-assisted development (Google Antigravity)." />
+  <title>Rhonny Jaimes | Computer Engineer &amp; Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background Glow -->
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-dot"></span>
+        <span>Rhonny <span class="accent">Jaimes</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#sobre-mi" data-i18n="nav.about">About</a>
+        <a href="#habilidades" data-i18n="nav.skills">Skills</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experience</a>
+        <a href="#proyectos" data-i18n="nav.projects">Projects</a>
+        <a href="#contacto" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-btn" aria-label="Switch language" title="Cambiar a Español">
+          ES
+        </button>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="cv.html" class="btn btn-sm btn-primary" data-i18n="nav.cv">View CV</a>
+        <button id="menuToggle" class="icon-btn mobile-only" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero.status">Available for Full Stack roles &amp; projects</span>
+          </div>
+
+          <h1>
+            <span data-i18n="hero.greeting">Hi, I'm</span> <span class="gradient-text">Rhonny Andrés Jaimes González</span>
+          </h1>
+          <p class="hero-role" data-i18n="hero.role">
+            Computer Engineer · Full Stack Software Developer
+          </p>
+          <p class="hero-desc" data-i18n-html="hero.desc">
+            I turn industrial workflows and business needs into fast, secure, and scalable web applications with <strong>React, Node.js, and SQL</strong>, accelerating every stage of the software lifecycle with modern <strong>AI tools like Google Antigravity</strong>.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#proyectos" class="btn btn-primary" data-i18n="hero.ctaProjects">Explore Projects</a>
+            <a href="https://www.linkedin.com/in/rhonny-jaimes-a5907b200" target="_blank" rel="noopener" class="btn btn-secondary">
+              LinkedIn ↗
+            </a>
+            <a href="https://drive.google.com/drive/folders/10CTQfVpW_5G6s0ghD9SPQc8_AnkCEyrF?usp=sharing" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="hero.ctaDrive">
+              Certifications (Drive) ↗
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-value">Full Stack</span>
+              <span class="metric-label">React · Node.js · SQL</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">Natulac</span>
+              <span class="metric-label" data-i18n="hero.metricNatulac">Industrial Experience</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">AI + Code</span>
+              <span class="metric-label">Google Antigravity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-card">
+            <div class="profile-glow"></div>
+            <img src="assets/profile.jpg" alt="Rhonny Andrés Jaimes González — Computer Engineer" class="profile-img" />
+            <div class="profile-badge">
+              <span class="badge-icon">🎓</span>
+              <div>
+                <strong data-i18n="hero.badgeTitle">Computer Engineer</strong>
+                <span>Edo. Trujillo, Venezuela</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="about.eyebrow">Who I am</span>
+          <h2 data-i18n="about.title">Solid engineering with a product mindset</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass reveal">
+            <p data-i18n-html="about.p1">
+              I'm a <strong>Computer Engineer</strong> graduated from <strong>Universidad Valle del Momboy</strong>. I'm passionate about building software that solves real-world problems and drives measurable operational impact.
+            </p>
+            <p data-i18n-html="about.p2">
+              During my internship at <strong>Industrias Maros, C.A. (Natulac)</strong>, I designed and built an end-to-end web system to digitize and trace the dairy supply chain, integrating a Node.js/Express backend, relational databases (PostgreSQL/MySQL), a React/Vite frontend, and role-based access control (RBAC).
+            </p>
+            <p data-i18n-html="about.p3">
+              Alongside strong software engineering fundamentals, I actively leverage <strong>agentic AI development tools such as Google Antigravity</strong> to speed up architecture, refactoring, documentation, and testing—delivering cleaner solutions faster.
+            </p>
+          </div>
+
+          <div class="pillars-grid reveal">
+            <div class="pillar-card glass">
+              <div class="pillar-icon">⚡</div>
+              <h3 data-i18n="about.pillar1Title">End-to-End Full Stack</h3>
+              <p data-i18n="about.pillar1Desc">From relational SQL database design and secure REST APIs to responsive React interfaces and PWAs.</p>
+            </div>
+            <div class="pillar-card glass">
+              <div class="pillar-icon">🤖</div>
+              <h3 data-i18n="about.pillar2Title">AI-Assisted Development</h3>
+              <p data-i18n="about.pillar2Desc">Strategic use of Google Antigravity and agentic AI workflows to boost velocity and code quality.</p>
+            </div>
+            <div class="pillar-card glass">
+              <div class="pillar-icon">🏭</div>
+              <h3 data-i18n="about.pillar3Title">Industrial Digitization</h3>
+              <p data-i18n="about.pillar3Desc">Hands-on experience building batch traceability, auditing, and inventory systems for plant operations.</p>
+            </div>
+            <div class="pillar-card glass">
+              <div class="pillar-icon">🔐</div>
+              <h3 data-i18n="about.pillar4Title">Security &amp; Best Practices</h3>
+              <p data-i18n="about.pillar4Desc">JWT authentication, role-based access control (RBAC), MVC architecture, and maintainable code.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="habilidades" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="skills.eyebrow">Tech Stack</span>
+          <h2 data-i18n="skills.title">Tools I build with</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card glass reveal">
+            <div class="skill-card-head">
+              <span class="skill-emoji">🎨</span>
+              <h3>Frontend &amp; UI</h3>
+            </div>
+            <div class="tags">
+              <span>React</span>
+              <span>Vite</span>
+              <span>JavaScript (ES6+)</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Tailwind CSS</span>
+              <span>EJS</span>
+              <span>PWA</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass reveal">
+            <div class="skill-card-head">
+              <span class="skill-emoji">⚙️</span>
+              <h3 data-i18n="skills.backendTitle">Backend &amp; Security</h3>
+            </div>
+            <div class="tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Python</span>
+              <span>REST APIs</span>
+              <span>JWT</span>
+              <span>RBAC</span>
+              <span data-i18n="skills.mvc">MVC Architecture</span>
+              <span>Webpack</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass reveal">
+            <div class="skill-card-head">
+              <span class="skill-emoji">🗄️</span>
+              <h3 data-i18n="skills.dbTitle">Databases</h3>
+            </div>
+            <div class="tags">
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span data-i18n="skills.dbModel">Relational Modeling</span>
+              <span data-i18n="skills.dbSql">SQL Queries</span>
+              <span data-i18n="skills.dbAudit">Batch Auditing</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass highlight-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-emoji">✨</span>
+              <h3 data-i18n="skills.aiTitle">AI &amp; Dev Productivity</h3>
+            </div>
+            <div class="tags">
+              <span class="tag-accent">Google Antigravity</span>
+              <span data-i18n="skills.aiAgents">Agentic AI Workflows</span>
+              <span data-i18n="skills.aiPrompt">Prompt Engineering</span>
+              <span data-i18n="skills.aiDev">AI-Assisted Development</span>
+              <span>Git &amp; GitHub</span>
+              <span>Docker</span>
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section id="experiencia" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="exp.eyebrow">Background</span>
+          <h2 data-i18n="exp.title">Work Experience &amp; Education</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item glass reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">
+              <span class="timeline-badge" data-i18n="exp.workBadge">Work Experience</span>
+              <span class="timeline-date" data-i18n="exp.workDate">May 2026 – July 2026</span>
+            </div>
+            <h3 data-i18n="exp.workRole">Software Developer – IT Intern</h3>
+            <p class="timeline-org">Industrias Maros, C.A. (Natulac) · Cabudare, Edo. Lara</p>
+            <ul class="timeline-list">
+              <li data-i18n="exp.workB1">Designed and developed a comprehensive web system to manage reception, processing, and traceability across the dairy supply chain.</li>
+              <li data-i18n-html="exp.workB2">Built a robust backend architecture with <strong>Node.js and Express</strong> connected to relational databases (<strong>PostgreSQL / MySQL</strong>) for real-time batch logging and auditing.</li>
+              <li data-i18n-html="exp.workB3">Created fast, responsive interfaces with <strong>React and Vite</strong> tailored for daily plant floor operations.</li>
+              <li data-i18n-html="exp.workB4">Integrated secure authentication and role-based access control (<strong>RBAC / JWT</strong>).</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item glass reveal">
+            <div class="timeline-dot dot-edu"></div>
+            <div class="timeline-meta">
+              <span class="timeline-badge badge-edu" data-i18n="exp.eduBadge">University Education</span>
+              <span class="timeline-date" data-i18n="exp.eduDate">Graduated</span>
+            </div>
+            <h3 data-i18n="exp.eduDegree">B.S. in Computer Engineering</h3>
+            <p class="timeline-org">Universidad Valle del Momboy · Valera, Edo. Trujillo, Venezuela</p>
+            <ul class="timeline-list">
+              <li data-i18n="exp.eduB1">Comprehensive training in software engineering, systems architecture, databases, networking, and web development.</li>
+              <li data-i18n="exp.eduB2">Completed undergraduate thesis focused on developing practical software technology solutions.</li>
+              <li data-i18n="exp.eduB3">Complementary foundation in technical support, structured cabling, and computer networks.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="proyectos" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="proj.eyebrow">GitHub Portfolio</span>
+          <h2 data-i18n="proj.title">Featured Projects</h2>
+          <p class="section-sub" data-i18n="proj.sub">A selection of real applications built and published on my GitHub account.</p>
+        </div>
+
+        <div class="filter-bar reveal" role="tablist" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" data-i18n="proj.filterAll">All</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="pwa">PWA / FinTech</button>
+          <button class="filter-btn" data-filter="backend">Backend &amp; APIs</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass reveal" data-category="fullstack">
+            <div class="project-header">
+              <span class="project-type" data-i18n="proj.p1Type">Full Stack · Agribusiness</span>
+              <a href="https://github.com/rhonnyjaimes/sistema-inventario-cafe5.0" target="_blank" rel="noopener" class="project-ext" aria-label="View repository on GitHub">GitHub ↗</a>
+            </div>
+            <h3 data-i18n="proj.p1Title">Café 5.0 Inventory System</h3>
+            <p data-i18n="proj.p1Desc">
+              Full Stack platform managing end-to-end operations for a coffee production business: production tracking, real-time inventory, sales, and supplier management backed by SQL.
+            </p>
+            <div class="tags">
+              <span>React</span>
+              <span>Vite</span>
+              <span>Tailwind CSS</span>
+              <span>Node.js</span>
+              <span>JWT</span>
+              <span>MySQL</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="pwa">
+            <div class="project-header">
+              <span class="project-type">PWA · FinTech</span>
+              <a href="https://github.com/rhonnyjaimes/calculo-diferencia-cambiaria" target="_blank" rel="noopener" class="project-ext" aria-label="View repository on GitHub">GitHub ↗</a>
+            </div>
+            <h3 data-i18n="proj.p2Title">Exchange Rate Difference Calculator</h3>
+            <p data-i18n="proj.p2Desc">
+              Installable Progressive Web App (mobile &amp; desktop) that calculates real-time bank FX purchases, card fees, and net returns when converting to USDT on Binance.
+            </p>
+            <div class="tags">
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>PWA Manifest</span>
+              <span>Mobile-First</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="fullstack backend">
+            <div class="project-header">
+              <span class="project-type" data-i18n="proj.p3Type">Full Stack · MVC Architecture</span>
+              <a href="https://github.com/rhonnyjaimes/gestion-estudiantil" target="_blank" rel="noopener" class="project-ext" aria-label="View repository on GitHub">GitHub ↗</a>
+            </div>
+            <h3 data-i18n="proj.p3Title">Student Management System</h3>
+            <p data-i18n="proj.p3Desc">
+              Institutional web service structured with the MVC pattern (models, controllers, routes, and middlewares) to manage academic student records with secure authentication.
+            </p>
+            <div class="tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>EJS</span>
+              <span>MySQL</span>
+              <span>JWT</span>
+              <span>MVC</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="fullstack">
+            <div class="project-header">
+              <span class="project-type" data-i18n="proj.p4Type">Full Stack · Social Impact</span>
+              <a href="https://github.com/rhonnyjaimes/Pagina-Mujeres-Libres" target="_blank" rel="noopener" class="project-ext" aria-label="View repository on GitHub">GitHub ↗</a>
+            </div>
+            <h3 data-i18n="proj.p4Title">Mujeres Libres y Líderes Portal</h3>
+            <p data-i18n="proj.p4Desc">
+              Educational web platform promoting gender equality and women's leadership, featuring authenticated user management, learning resources, and Webpack bundling.
+            </p>
+            <div class="tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>EJS</span>
+              <span>Webpack</span>
+              <span>MySQL</span>
+              <span>JWT</span>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="backend">
+            <div class="project-header">
+              <span class="project-type">Backend · Node.js</span>
+              <a href="https://github.com/rhonnyjaimes/sistema-bancario-servidor" target="_blank" rel="noopener" class="project-ext" aria-label="View repository on GitHub">GitHub ↗</a>
+            </div>
+            <h3 data-i18n="proj.p5Title">Banking System Server</h3>
+            <p data-i18n="proj.p5Desc">
+              Node.js backend server model handling core banking logic, built with modular routes, controllers, and server-side data management.
+            </p>
+            <div class="tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>JavaScript</span>
+              <span>REST</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="contact-box glass reveal">
+          <span class="eyebrow" data-i18n="contact.eyebrow">Let's Talk</span>
+          <h2 data-i18n="contact.title">Looking for a dedicated Computer Engineer?</h2>
+          <p class="contact-sub" data-i18n="contact.sub">
+            I'm ready to join engineering teams, take on freelance builds, or help digitize your business workflows.
+          </p>
+
+          <div class="contact-grid">
+            <a href="mailto:rhonnyjaimes2002@gmail.com" class="contact-item">
+              <span class="c-label" data-i18n="contact.emailLabel">Email</span>
+              <strong>rhonnyjaimes2002@gmail.com</strong>
+            </a>
+
+            <a href="https://wa.me/584146682763" target="_blank" rel="noopener" class="contact-item">
+              <span class="c-label" data-i18n="contact.phoneLabel">WhatsApp / Phone</span>
+              <strong>+58 414-6682763</strong>
+            </a>
+
+            <a href="https://github.com/rhonnyjaimes" target="_blank" rel="noopener" class="contact-item">
+              <span class="c-label">GitHub</span>
+              <strong>github.com/rhonnyjaimes</strong>
+            </a>
+
+            <a href="https://www.linkedin.com/in/rhonny-jaimes-a5907b200" target="_blank" rel="noopener" class="contact-item">
+              <span class="c-label">LinkedIn</span>
+              <strong>Rhonny Jaimes ↗</strong>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/10CTQfVpW_5G6s0ghD9SPQc8_AnkCEyrF?usp=sharing" target="_blank" rel="noopener" class="contact-item contact-cv">
+              <span class="c-label" data-i18n="contact.driveLabel">Documents &amp; Certifications</span>
+              <strong data-i18n="contact.driveCta">View on Google Drive →</strong>
+            </a>
+          </div>
+
+          <div class="contact-actions">
+            <button id="copyEmailBtn" class="btn btn-secondary" data-i18n="contact.copyBtn">Copy email address</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rhonny Andrés Jaimes González · <span data-i18n="footer.role">Computer Engineer</span>.</p>
+      <p class="footer-note" data-i18n="footer.note">Built with HTML5, CSS3 &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" data-i18n="contact.toast">Email copied to clipboard</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
