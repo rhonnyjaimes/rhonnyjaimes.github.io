@@ -241,7 +241,7 @@
     .header {
       background: linear-gradient(135deg, #13345e 0%, #1d4e89 100%);
       color: var(--white);
-      padding: 24px 28px 20px;
+      padding: 20px 28px 18px;
     }
 
     .header h1 {
@@ -252,7 +252,7 @@
     }
 
     .header .subtitle {
-      margin-top: 6px;
+      margin-top: 5px;
       font-size: 12.5px;
       font-weight: 600;
       letter-spacing: 1px;
@@ -261,9 +261,35 @@
     }
 
     .header .tagline {
-      margin-top: 6px;
+      margin-top: 5px;
       font-size: 11px;
       color: #e2e8f0;
+    }
+
+    .header-portfolio {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 9px;
+      padding: 4px 11px;
+      border-radius: 99px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(147, 197, 253, 0.55);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.2px;
+    }
+
+    .header-portfolio:hover {
+      background: rgba(255, 255, 255, 0.24);
+    }
+
+    .header-portfolio svg {
+      width: 13px;
+      height: 13px;
+      color: #93c5fd;
     }
 
     .content {
@@ -583,7 +609,7 @@
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            <a href="https://rhonnyjaimes.github.io/" target="_blank">rhonnyjaimes.github.io</a>
+            <a href="https://rhonnyjaimes.github.io/" target="_blank" style="color: #93c5fd; font-weight: 700; text-decoration: underline;">rhonnyjaimes.github.io ↗</a>
           </li>
         </ul>
       </section>
@@ -653,6 +679,10 @@
         <h1>Rhonny Andrés Jaimes González</h1>
         <div class="subtitle" data-i18n="header.subtitle">Computer Engineer · Full Stack Developer</div>
         <div class="tagline" data-i18n="header.tagline">React · Node.js · PostgreSQL / MySQL · AI-Assisted Development (Antigravity)</div>
+        <a href="https://rhonnyjaimes.github.io/" target="_blank" class="header-portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span data-i18n="header.portfolio">Web Portfolio: rhonnyjaimes.github.io ↗</span>
+        </a>
       </header>
 
       <div class="content">
@@ -786,6 +816,7 @@
         'side.softText': 'Analytical problem-solving, agile teamwork, effective communication, continuous self-learning, adaptability, and results-driven mindset.',
         'header.subtitle': 'Computer Engineer · Full Stack Developer',
         'header.tagline': 'React · Node.js · PostgreSQL / MySQL · AI-Assisted Development (Antigravity)',
+        'header.portfolio': 'Web Portfolio: rhonnyjaimes.github.io ↗',
         'main.profileTitle': 'Professional Profile',
         'main.profileText': '<strong>Computer Engineer</strong> with hands-on experience digitizing industrial processes and building Full Stack web applications. Strong technical command of <strong>JavaScript, React, and Node.js</strong>, relational database design (PostgreSQL/MySQL), and security &amp; authentication best practices. Actively integrates <strong>modern AI tools like Google Antigravity</strong> into development workflows to accelerate delivery, refactoring, and testing—building scalable, clean digital products focused on operational efficiency.',
         'main.expTitle': 'Work Experience',
@@ -829,6 +860,7 @@
         'side.softText': 'Resolución analítica de problemas, trabajo en equipo ágil, comunicación efectiva, aprendizaje autónomo continuo, adaptabilidad y orientación a resultados.',
         'header.subtitle': 'Ingeniero en Computación · Desarrollador Full Stack',
         'header.tagline': 'React · Node.js · PostgreSQL / MySQL · Desarrollo Asistido por IA (Antigravity)',
+        'header.portfolio': 'Portafolio Web: rhonnyjaimes.github.io ↗',
         'main.profileTitle': 'Perfil Profesional',
         'main.profileText': '<strong>Ingeniero en Computación</strong> con experiencia práctica en la digitalización de procesos industriales y el desarrollo web Full Stack. Cuento con sólido dominio técnico en <strong>JavaScript, React y Node.js</strong>, diseño de bases de datos relacionales (PostgreSQL/MySQL) y buenas prácticas de seguridad y autenticación. Integro activamente <strong>herramientas modernas de Inteligencia Artificial como Google Antigravity</strong> en mis flujos de trabajo para acelerar el desarrollo, refactorización y pruebas de software, entregando productos digitales escalables, limpios y orientados a optimizar la eficiencia operativa.',
         'main.expTitle': 'Experiencia Laboral',
